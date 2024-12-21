@@ -1,0 +1,235 @@
+@font-face {
+    font-family: Lemon;
+    src: url(fonts/LEMONMILK-BoldItalic.otf);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 0, 0);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
+    background-color: black;
+    z-index: 9999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Ensures space between the logo and links */
+    align-items: center;
+    width: 100%; /* Takes full width of the navbar */
+    max-width: 1200px; /* Optional: Set a maximum width */
+    padding: 0 20px; /* Adds padding on the sides */
+}
+
+#logo {
+    position: absolute;
+    left: 120px;
+    display: flex;
+    color: white;
+    font-size: 34px;
+    text-decoration: none;
+}
+
+#nav-links {
+    position: absolute;
+    right: 204px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    font-size: 24px;
+}
+
+#nav-links a {
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+}
+
+#nav-links a:hover {
+  color: blueviolet;
+    border-radius: 5px;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden; /* Ensures no overflow (scrollbars) */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#main video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the video */
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover; /* Ensures the video covers the entire area */
+    z-index: 1;
+}
+
+
+#main h1 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20vh; /* Adjust if necessary */
+    font-family: "Lemon";
+    top: 30%;
+    color: transparent;
+    z-index: 2;
+    line-height: 0.75; /* Decrease this to reduce the gap between lines */
+    -webkit-text-stroke: 5px #fff;
+    letter-spacing: 0.05em;
+  /*  border: 1px solid yellow;*/
+    padding: 20px; /* Add padding for better spacing */
+    overflow: hidden; /* Ensures the text does not overflow */
+    white-space: nowrap; /* Ensures the text stays on one line */
+    text-overflow: ellipsis; 
+    visibility: hidden;
+}
+
+h1 span{
+    display: block;
+    position: relative;
+}
+
+h1 span:before{
+    content: attr(data-char);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-130%);
+    color: #f8f8f8;
+}
+#show{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 10%;
+    top: 85%;
+    z-index: 2;
+    font-size: 40px;
+    background: transparent;
+    border-radius: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+#two{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+
+}
+
+#page2{
+
+    height: 70vh;
+    width: 100%;
+    background-color: rgb(35, 81, 137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page2 h1{
+    position: relative;
+    top: 5%;
+    left: 99%;
+    font-size: 20vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    white-space: nowrap; /* Prevents the text from wrapping */
+
+}
+
+#first{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+#one{
+    top: 0%;
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#center{
+ 
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1;
+}
+
+
+#three{
+    bottom: 0%;
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+ z-index: 2;
+}
+
+#first h1{
+    font-size: 15vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+
+#top-h{
+    top: 64% !important; /* Adjust to move closer to the top */
+    transform: translate(-50%, 0%) !important; /* Only translate horizontally */
+
+}
+
+#bot-h{
+    top: 0% !important;
+}
+#center video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the video */
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: contain; /* Ensures the video covers the entire area */
+    z-index: 1;
+}
