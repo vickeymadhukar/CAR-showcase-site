@@ -21,8 +21,9 @@ An elegant and interactive frontend design to highlight newly launched cars. Thi
 
 ![image](https://github.com/user-attachments/assets/5c9d1b13-5f07-4054-a899-17f6d916cfff)
 
-![image](https://github.com/user-attachments/assets/37b4bde9-7dbc-44df-abfb-cfe2de26963a)
+![carbmw-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/e1608975-0888-4682-9997-0c7c5e7dafbb)
 
+![finalcar-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/3fee2720-ea20-408d-b900-83a06e0a53a0)
 
 ## Getting Started
 
