@@ -28,23 +28,23 @@ var text=document.querySelector("h1"),
 
   
 gsap.to("#page2 h1",{
-   transform:"translateX(-80%)",
+  transform:"translateX(-500%)",
    scrollTrigger:{
     trigger:"#page2",
     scroller:"body",
-    markers:true,
     start:"top 0%",
     end:"100% -100%",
+    markers: true,
     scrub:2,
     pin:true
    }
 });
 
-var tv=gsap.timeline({scrollTrigger:{
+var tv=gsap.timeline({
+   scrollTrigger:{
    trigger:"#first",
-   markers:true,
    start:"50% 50%",
-   end:"100% 50%",
+   end:"70% 50%",
    scrub:2,
    pin:true
 
